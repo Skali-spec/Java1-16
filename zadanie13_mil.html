@@ -10,27 +10,12 @@
     // Alan Milcewicz 3F 11.10.2025
     // Zadanie 13 – Rozkład ułamka egipskiego na dwa ułamki egipskie
 
-    // Pobranie liczby m od użytkownika
     var m_mil = prompt("Podaj wartość m:", "");
-
-    // Zamiana na liczbę
     var m = parseFloat(m_mil);
-
-    if (isNaN(m) || m <= 0) {
-        document.write("Podano niepoprawną wartość m!");
-    } else {
-        // Obliczenia według wzoru:
-        // 1/m = 1/(m+1) + 1/(m*(m+1))
-        var ulamek1 = 1 / (m + 1);
-        var ulamek2 = 1 / (m * (m + 1));
-
-        document.write("<h2>Rozkład ułamka egipskiego:</h2>");
-        document.write("1/" + m + " = 1/" + (m + 1) + " + 1/" + (m * (m + 1)) + "<br><br>");
-        
-        
-    }
-
-    // Przycisk zamknięcia
+    var ulamek1 = 1 / (m + 1);
+    var ulamek2 = 1 / (m * (m + 1));
+    document.write("<h2>Rozkład ułamka egipskiego:</h2>");
+    document.write("1/" + m + " = 1/" + (m + 1) + " + 1/" + (m * (m + 1)) + "<br><br>");
     function okno_zamknij_milc() {
         window.close();
     }
@@ -41,6 +26,7 @@
 
 </body>
 </html>
+
 
 
 
