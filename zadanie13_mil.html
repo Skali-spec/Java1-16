@@ -16,12 +16,17 @@
     // Zamiana na liczbę
     var m = parseFloat(m_mil);
 
-    
-    var ulamek1 = 1 / (m + 1);
-    var ulamek2 = 1 / (m * (m + 1));
+    if (isNaN(m) || m <= 0) {
+        document.write("Podano niepoprawną wartość m!");
+    } else {
+        // Obliczenia według wzoru:
+        // 1/m = 1/(m+1) + 1/(m*(m+1))
+        var ulamek1 = 1 / (m + 1);
+        var ulamek2 = 1 / (m * (m + 1));
 
-    document.write("<h2>Rozkład ułamka egipskiego:</h2>");
-    document.write("1/" + m + " = 1/" + (m + 1) + " + 1/" + (m * (m + 1)) + "<br><br>");
+        document.write("<h2>Rozkład ułamka egipskiego:</h2>");
+        document.write("1/" + m + " = 1/" + (m + 1) + " + 1/" + (m * (m + 1)) + "<br><br>");
+        
         
     }
 
@@ -36,6 +41,7 @@
 
 </body>
 </html>
+
 
 
 
