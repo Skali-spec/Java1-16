@@ -1,12 +1,14 @@
+<!--Alan Milcewicz 3F--!>
 <html>
 <body>
 <textarea cols="90" rows="24">
+<!--Alan Milcewicz 3F --!>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Zadanie 15 – Ułamek egipski</title>
 </head>
-<body style="color:green; font-size:30px;">
+<body style="color:green; font-size:33px;">
 
 <script>
     // Alan Milcewicz 3F 11.10.2025
@@ -14,30 +16,26 @@
 
    
     var m_mil = prompt("Podaj wartość m:", "");
-
-    
     var m = parseFloat(m_mil);
-
-   
     var ulamek1 = 1 / (m + 1);
     var ulamek2 = 1 / (m * (m + 1));
-
     document.write("<h2>Rozkład ułamka egipskiego:</h2>");
     document.write("1/" + m + " = 1/" + (m *2) + " + 1/" + (m*2) + "<br><br>");
-        
-    }
-
-    
-    function okno_zamknij() {
+   
+    function okno_zamknij_milc() {
         window.close();
     }
 </script>
 
 <br><br>
-<input type="button" value="Zamknij okno" onclick="okno_zamknij()"/>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_milc()"/>
 
 </body>
 </html>
+
+
+
 </textarea>
 </body>
 </html>
+
